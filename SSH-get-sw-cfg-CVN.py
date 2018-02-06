@@ -94,7 +94,8 @@ def excute_command(ip,username,password,switch_file):
     except paramiko.SSHException:
         print "* The device is not available"
         
-#Define the input file, inlcuding ip, username and password file
+#Define the input file, inlcuding ip, username and password of FW in firewall file, list of switch in switch file
+#Must give argrument (file name) to command line
 firewall_input = sys.argv[1]
 switch_file = sys.argv[2]
         
